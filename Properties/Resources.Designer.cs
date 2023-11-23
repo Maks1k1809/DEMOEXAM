@@ -10,6 +10,7 @@
 
 namespace TarasovMaximDemo.Properties
 {
+    using System;
 
 
     /// <summary>
@@ -22,7 +23,7 @@ namespace TarasovMaximDemo.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
+    public class Resources
     {
 
         private static global::System.Resources.ResourceManager resourceMan;
@@ -38,11 +39,11 @@ namespace TarasovMaximDemo.Properties
         ///   Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
+        public static global::System.Resources.ResourceManager ResourceManager
         {
             get
             {
-                if ((resourceMan == null))
+                if (object.ReferenceEquals(resourceMan, null))
                 {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TarasovMaximDemo.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
@@ -56,7 +57,7 @@ namespace TarasovMaximDemo.Properties
         ///   подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
+        public static global::System.Globalization.CultureInfo Culture
         {
             get
             {
@@ -67,5 +68,58 @@ namespace TarasovMaximDemo.Properties
                 resourceCulture = value;
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] capcha1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("capcha1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] capcha2
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("capcha2", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] capcha3
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("capcha3", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] capcha4
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("capcha4", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+
     }
 }

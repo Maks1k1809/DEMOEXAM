@@ -7,26 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TarasovMaximDemo.Entity
+namespace TarasovMaximDemo.Entities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class City
+    public partial class ActivityJury
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public City()
-        {
-            this.Meet = new HashSet<Meet>();
-        }
-    
         public int ID { get; set; }
-        public string Name { get; set; }
-        public bool IsRecognized { get; set; }
-        public int IDCountry { get; set; }
+        public int IDActivity { get; set; }
+        public int IDUser { get; set; }
+        public int Order_Number { get; set; }
     
-        public virtual Country Country { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Meet> Meet { get; set; }
+        public virtual Activity Activity { get; set; }
+        public virtual User User { get; set; }
     }
 }

@@ -7,26 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TarasovMaximDemo.Entity
+namespace TarasovMaximDemo.Entities
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Direction
+    public partial class City
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Direction()
+        public City()
         {
             this.Meet = new HashSet<Meet>();
-            this.User = new HashSet<User>();
         }
     
         public int ID { get; set; }
         public string Name { get; set; }
+        public bool IsRecognized { get; set; }
+        public int IDCountry { get; set; }
     
+        public virtual Country Country { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Meet> Meet { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> User { get; set; }
     }
 }

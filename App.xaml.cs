@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using TarasovMaximDemo.Entity;
+using TarasovMaximDemo.Entities;
 using TarasovMaximDemo.Properties;
 
 namespace TarasovMaximDemo
@@ -15,7 +15,7 @@ namespace TarasovMaximDemo
     /// </summary>
     public partial class App : Application
     {
-        public static Entity.TarasovEntities Context { get; set; } = new TarasovEntities();
+        public static Entities.TarasovEntities Context { get; set; } = new TarasovEntities();
         public static User AuthUser
         {
             get

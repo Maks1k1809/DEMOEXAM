@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TarasovMaximDemo.Entity
+namespace TarasovMaximDemo.Entities
 {
     using System;
     using System.Collections.Generic;
